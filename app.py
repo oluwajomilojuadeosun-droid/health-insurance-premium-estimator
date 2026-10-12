@@ -16,7 +16,7 @@ st.write("Enter your details below to calculate your estimated annual health ins
 # Part 2 & Part 3: Load the trained pipeline
 @st.cache_resource
 def load_model():
-    return joblib.load(r"C:\Users\aadeo\OneDrive\Desktop\health insurance  premium estimator\insurance_model.pkl")
+    return joblib.load("insurance_model.pkl")
 
 try:
     model = load_model()
